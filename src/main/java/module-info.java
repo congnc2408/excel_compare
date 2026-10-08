@@ -11,7 +11,9 @@ module com.example.cici {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires org.apache.poi.poi;
+    requires org.apache.poi.ooxml;
 
     opens com.example.cici to javafx.fxml;
+
     exports com.example.cici;
 }

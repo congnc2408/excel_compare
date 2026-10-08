@@ -7,29 +7,35 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
-<VBox prefHeight="1080" prefWidth="1920" alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" stylesheets="@../../../css/style.css"
-      fx:controller="com.example.cici.MainController">
+<?import javafx.scene.control.ProgressBar?>
+
+<VBox prefHeight="720" prefWidth="1200" alignment="CENTER" spacing="20.0"
+    xmlns:fx="http://javafx.com/fxml" stylesheets="@../../../css/style.css" fx:controller="com.example.cici.MainController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
     <HBox alignment="CENTER_LEFT" spacing="10.0">
-<!--        <Button fx:id="btnChoose" mnemonicParsing="false" text="Choose" />-->
+        <!--        <Button fx:id="btnChoose" mnemonicParsing="false" text="Choose" />-->
         <Button fx:id="btnCompare" mnemonicParsing="false" text="Compare" />
-        <Button fx:id="btnReset" mnemonicParsing="false" text="Reset"  onAction="#Reset"/>
-        <Button fx:id="btnClose" mnemonicParsing="false" text="Reset" />
+        <Button fx:id="btnReset" mnemonicParsing="false" text="Reset" onAction="#Reset"/>
+        <Button fx:id="btnExport" mnemonicParsing="false" text="Export" onAction= "#handleExportAction"/>
+
+        <!-- THÊM PROGRESS BAR VÀ LABEL VÀO ĐÂY (Nằm ngang hàng với các nút) -->
+        <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" />
+        <Label fx:id="lblProgress" text="0%" />
     </HBox>
 
-<!--    <Label fx:id="welcomeText"/>-->
-<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+    <!--    <Label fx:id="welcomeText"/>-->
+    <!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
     <VBox spacing="5.0">
-        <Label styleClass="label-title">Table Root</Label>
-        <TableView fx:id="tblRoot" prefHeight="400" prefWidth="1920"></TableView>
+        <Label fx:id = "lblRoot" styleClass="label-title">Table Root</Label>
+        <TableView fx:id="tblRoot" prefHeight="300" prefWidth="1200"></TableView>
     </VBox>
 
     <VBox spacing="5.0">
-        <Label styleClass="label-title">Table Compare</Label>
-        <TableView fx:id="tblCompare" prefHeight="400" prefWidth="1920"></TableView>
+        <Label fx:id = "lblCompare" styleClass="label-title">Table Compare</Label>
+        <TableView fx:id="tblCompare" prefHeight="300" prefWidth="1200"></TableView>
     </VBox>
 
 </VBox>

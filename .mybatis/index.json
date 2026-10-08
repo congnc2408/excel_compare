@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "timestamp": 1791456095525,
+  "projectRoot": "q:\\excel_compare",
+  "entries": [
+    {
+      "path": "target\\classes\\com\\example\\cici\\configs\\ExcelConfig.class",
+      "mtime": 1791442911691.3162,
+      "size": 308
+    },
+    {
+      "path": "target\\classes\\com\\example\\cici\\MainApplication.class",
+      "mtime": 1791443373171.2368,
+      "size": 1454
+    }
+  ]
+}
