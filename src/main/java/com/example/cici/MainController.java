@@ -222,6 +222,8 @@ public class MainController {
         tblRoot.getColumns().clear();
         tblCompare.getItems().clear();
         tblCompare.getColumns().clear();
+        lblRoot.setText("Table Root");
+        lblCompare.setText("Table Compared");
     }
 
 }
